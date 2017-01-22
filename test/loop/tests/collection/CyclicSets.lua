@@ -1,4 +1,4 @@
-local src2test = require "loop.tests.library.src2test"
+local src2test = require "loop.tests.collection.src2test"
 local CyclicSets = require "loop.collection.CyclicSets"
 
 local function create(spec)

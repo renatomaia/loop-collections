@@ -1,4 +1,4 @@
-local src2test = require "loop.tests.library.src2test"
+local src2test = require "loop.tests.collection.src2test"
 local Queue = require "loop.collection.Queue"
 
 local function newcreate(count)
