@@ -1,13 +1,17 @@
 package = "loopcollections"
-version = "1.0-1"
+version = "scm-1"
 source = {
-	url = "*** please add URL for source tarball, zip or repository here ***"
+	url = "https://github.com/renatomaia/loop-collections/archive/master.zip",
+	dir = "loop-collections-master",
 }
 description = {
 	summary = "LOOP classes for data structures in Lua",
-	detailed = "This group contains classes that implement different data structures that are particularly efficient in Lua.",
-	homepage = "https://git.tecgraf.puc-rio.br/maia/lua-loopcollections",
-	license = "MIT"
+	detailed = [[
+		This group contains classes that implement different data structures that
+		are particularly efficient in Lua.
+	]],
+	homepage = "https://github.com/renatomaia/loop-collections",
+	license = "MIT",
 }
 dependencies = {
 	"lua >= 5.2, < 5.4",
@@ -24,7 +28,7 @@ build = {
 		['loop.collection.OrderedSet'] = "lua/loop/collection/OrderedSet.lua",
 		['loop.collection.Queue'] = "lua/loop/collection/Queue.lua",
 		['loop.collection.SortedMap'] = "lua/loop/collection/SortedMap.lua",
-		['loop.collection.UnorderedArray'] = "lua/loop/collection/UnorderedArray.lua"
-	}
+		['loop.collection.UnorderedArray'] = "lua/loop/collection/UnorderedArray.lua",
+	},
 }
 
