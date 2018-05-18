@@ -79,7 +79,7 @@ local ErrorFmt = [[expected transition failed:
 	Was : %s
 ]]
 
-local pattern = "^%-%- { (.+) } *:(%w+)%((.*)%) +%-%-> { (.+) } +:(.*)$"
+local pattern = "^%-%- { (.+) } *:([%w_]+)%((.*)%) +%-%-> { (.+) } +:(.*)$"
 
 return function(name, create, autocases, blackbox)
 	local source

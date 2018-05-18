@@ -117,7 +117,7 @@ end
 -- { one two }      :__len() --> { one two }       : 2
 -- { one two three }:__len() --> { one two three } : 3
 function Queue:__len()
-	return headOf[self] - tailOf[self]
+	return tailOf[self] - headOf[self]
 end
 
 local function iterator(self, index)
