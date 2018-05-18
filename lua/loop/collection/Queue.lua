@@ -71,7 +71,7 @@ function Queue:dequeue()
 	end
 end
 
--- { ? }                   :remove()  --> { ? }                 : error "attempt to perform arithmetic on local 'index' (a nil value)"
+-- { ? }                   :remove()  --> { ? }                 : error "attempt to perform arithmetic on a nil value (local 'index')"
 -- { }                     :remove(0) --> { }                   : 
 -- { }                     :remove(1) --> { }                   : 
 -- { }                     :remove(2) --> { }                   : 
@@ -103,7 +103,7 @@ function Queue:remove(index)
 	end
 end
 
--- { ? }              :get() --> { ? }                : error "attempt to perform arithmetic on local 'index' (a nil value)"
+-- { ? }              :get()  --> { ? }               : error "attempt to perform arithmetic on a nil value (local 'index')"
 -- { ? }              :get(0) --> { ? }               : nil
 -- { one ? }          :get(1) --> { one ? }           : one
 -- { one two ? }      :get(2) --> { one two ? }       : two
