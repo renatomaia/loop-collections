@@ -126,7 +126,7 @@ local function iterator(self, index)
 		return index+1, self[pos]
 	end
 end
-function Queue:__ipairs()
+function Queue:__pairs()
 	return iterator, self, 0
 end
 
